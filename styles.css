@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#quiz-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 60%;
+    max-width: 600px;
+    margin: 20px;
+    position: relative;
+}
+
+#timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#question-container, #result-container {
+    padding: 20px;
+}
+
+.question {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+}
+
+.choice {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.choice:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.choice:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#result-table th, #result-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+#result-table th {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+}

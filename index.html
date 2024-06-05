@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="timer">30</div>
+        <div id="question-container">
+            <p id="question" class="question"></p>
+            <div id="choices" class="choices"></div>
+        </div>
+        <div id="result-container" class="hidden">
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <th>Soru</th>
+                        <th>Seçilen Yanıt</th>
+                    </tr>
+                </thead>
+                <tbody id="result-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
